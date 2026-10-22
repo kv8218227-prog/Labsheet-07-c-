@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char first[100], last[100];
+    cin >> first >> last;
+    strcat(first, " ");
+    strcat(first, last);
+    cout << first;
+    return 0;
+}
