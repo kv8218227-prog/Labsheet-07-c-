@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char a[200], b[50], c[50];
+    cin >> a >> b >> c;
+
+    strcat(a, " ");
+    strcat(a, b);
+    strcat(a, " ");
+    strcat(a, c);
+
+    cout << a;
+    return 0;
+}
