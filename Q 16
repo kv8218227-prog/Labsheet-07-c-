@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char str[200];
+    int words = 0, inWord = 0;
+    cin.getline(str, 200);
+
+    for(int i = 0; i < strlen(str); i++) {
+        if(str[i] != ' ' && inWord == 0) {
+            words++;
+            inWord = 1;
+        }
+        else if(str[i] == ' ')
+            inWord = 0;
+    }
+
+    cout << "Words = " << words;
+    return 0;
+}
